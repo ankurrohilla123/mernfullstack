@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .center{
+            text-align: center;
+        }
+        td{
+            color:white;
+            width: 100px;
+        }
+        table{
+            width:45%;
+            padding-top: 20px;
+            border-spacing: 20px;
+            margin-top: 100px;
+            background-color: rgba(133, 34, 67, 0.897);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        body{
+            background-color: rgba(145, 24, 60, 0.938);
+        }
+        label{
+            margin-left: 30%;
+        }
+        select,input{
+            margin-left: 50px;
+        }
+        .reg{
+            width:400px;
+            border-radius: 5px;
+            border-color: rgba(100, 14, 21, 0.897);
+            font-size: larger;
+            font-weight: 549;
+        }
+        .space{
+            white-space: pre;
+        }
+        .top{
+            margin-top: 100px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Task7</title>
+</head>
+<body>
+    <table>
+    <form action="#">
+       
+    <tr class="top">
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" name="name" placeholder="your name" /></td>
+    </tr>
+    
+    <tr>
+        <td><label for="mail">Email:</label></td>
+        <td><input type="text" name="mail" placeholder="your email" /></td>
+    </tr>
+    
+    <tr>
+        <td><label for="pass">Password:</label></td>
+        <td><input type="password" name="pass" /></td>
+    </tr>    
+        
+    <tr>
+        <td><label for="gen">Gender:</label></td>
+        <td class="space">
+            Male:<input type="radio" name="gen" />Female:<input type="radio" name="gen" />Other:<input type="radio" name="gen" />
+        </td>
+    </tr>        
+        
+    <tr>
+        <td><label for="lang">language</label></td>
+        <td>
+            <select>
+                <option>English(US)</option>
+                <option>English(UK)</option>
+                <option>Hindi</option>
+                <option>Tamil</option>
+                <option>Other</option>
+            </select>
+        </td>
+    </tr>
+        
+    <tr>
+        <td><label for="zip">Zip Code:</label></td>
+        <td><input type="text" maxlength="6"></td>
+    </tr>    
+        
+        
+    <tr>
+        <td><label for="abt">About:</label></td>
+        <td><input type="text" name="abt"placeholder="write about yourself..." /></td>
+    </tr>
+
+    <tr>
+        <td class="center" colspan="2"><input type="submit" value="Register" class="reg"/></td>
+    </tr>
+
+    </form>
+    </table>
+</body>
+</html>
